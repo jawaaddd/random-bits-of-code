@@ -59,13 +59,14 @@ numOfValids = list(map(isValid, scholarships)).count(True)
 
 
 # Pretty Output (Just tells you how many scholarships are still open)
-# if (numOfValids == 0):
-#     print("No valid scholarships :(")
-# elif (numOfValids == 1):
-#     print("There is one valid scholarship.")
-# else:
-#     print("There are " + str(numOfValids) + " valid scholarships!")
+
+if (numOfValids == 0):
+    print("No valid scholarships :(")
+elif (numOfValids == 1):
+    print("There is one valid scholarship.")
+else:
+    print("There are " + str(numOfValids) + " valid scholarships! Go apply!")
 
 
 # Raw output (Number of open scholarships)
-print(numOfValids)
+# print(numOfValids)
